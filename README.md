@@ -1,3 +1,11 @@
+# My NOTES
+
+ 1. artist_name and #artist_name= so that an Artist can be retrieved from, and associated with, a Song instance
+ 2. helper method #display_artist If an artist is already associated with the song or 
+    If an artist is not associated with the song (a.k.a. 'else')
+      2a. return a link to the artist's show page
+      2b. return a link to the song's edit page, with a link text of "Add Artist"
+3. helper to display the artist on the songs#show and songs#index pages
 # Refactoring Views With Helpers Lab
 
 ## Objectives
