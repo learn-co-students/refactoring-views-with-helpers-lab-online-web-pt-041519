@@ -1,10 +1,14 @@
 class SongsController < ApplicationController
+  
   def index
     @songs = Song.all
   end
 
   def show
     @song = Song.find(params[:id])
+    if !@song.artist
+      songs_path
+    end
   end
 
   def new
@@ -13,7 +17,6 @@ class SongsController < ApplicationController
 
   def create
     @song = Song.new(song_params)
-
     if @song.save
       redirect_to @song
     else
